@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="outer-box">
+            {% if messages %}
+                {% for message in messages %}
+                  <h1>{{message}}</h1>
+                {% endfor %}
+            {% endif %}
+            <form action="" class="flex" method="POST">
+                {% csrf_token %}
+                <p class="field-box flex">
+                    <label for="">First Name</label>
+                    <input type="text" name="fname" required>
+                </p>
+                <p class="field-box flex">
+                    <label for="">Last Name</label>
+                    <input type="text" name="lname" required>
+                </p>
+                <p class="field-box flex">
+                    <label for="">Username</label>
+                    <input type="text" name="username" required>
+                </p>
+                <p class="field-box flex">
+                    <label for="">Email</label>
+                    <input type="email" name="email" required>
+                </p>
+                <p class="field-box flex">
+                    <label for="">Password</label>
+                    <input type="password" name="password" required>
+                </p>
+                <p class="field-box flex">
+                    <label for="">Email</label>
+                    <input type="password" name="cpassword" required>
+                </p>
+
+         
+                <button type="submit" class="submit-btn">Submit</button>
+              
+            </form>
+        </div>
+    </div>
+{% endblock content %}

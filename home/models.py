@@ -24,3 +24,6 @@ class Like(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
 
+class Product(models.Model):
+    name = models.CharField(max_length=20)
+    img = models.ImageField(upload_to="static/images")

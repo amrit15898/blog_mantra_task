@@ -48,11 +48,18 @@
     background-color: var(--secondary-color);
 
 }
-.blog-post  h1{
-    margin-block: 20px;
-}
+.pagination .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    margin: 3px;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+}   
 .blog-post{
     flex-direction: column;
+    gap: 8px;
     
 }
 /* .other-detail{
@@ -107,4 +114,90 @@
     flex-direction: column;
     gap: 10px;
 
+}
+
+
+/* ... Other CSS rules ... */
+
+.comment {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.likes {
+    margin-left: 10px;
+}
+
+.comment-form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.comment-form button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* ... Other CSS rules ... */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Style for warning messages */
+.warning-message {
+    background-color: #FFC107;
+    color: black;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Style for error messages */
+.error-message {
+    background-color: #F44336;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Media query for tablets and larger devices */
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
 }

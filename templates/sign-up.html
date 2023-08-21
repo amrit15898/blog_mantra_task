@@ -2,11 +2,7 @@
 {% block content %}
     <div class="container">
         <div class="outer-box">
-            {% if messages %}
-                {% for message in messages %}
-                  <h1>{{message}}</h1>
-                {% endfor %}
-            {% endif %}
+           
             <form action="" class="flex" method="POST">
                 {% csrf_token %}
                 <p class="field-box flex">
@@ -29,10 +25,7 @@
                     <label for="">Password</label>
                     <input type="password" name="password" required>
                 </p>
-                <p class="field-box flex">
-                    <label for="">Email</label>
-                    <input type="password" name="cpassword" required>
-                </p>
+
 
          
                 <button type="submit" class="submit-btn">Submit</button>

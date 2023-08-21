@@ -1,13 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var showCommentFormButton = document.getElementById('showCommentForm');
-    var commentFormDiv = document.querySelector('.cmnt-form');
-    
-    showCommentFormButton.addEventListener('click', function() {
-        if (commentFormDiv.style.display === 'none') {
-            commentFormDiv.style.display = 'block';
-        } else {
-            commentFormDiv.style.display = 'none';
-        }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const showEmailFormButton = document.getElementById("showEmailForm");
+    const emailForm = document.querySelector(".email-form");
+
+    showEmailFormButton.addEventListener("click", function() {
+        emailForm.style.display = "block";
+        showEmailFormButton.style.display = "none";
     });
 });
-

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -81,7 +82,7 @@
     flex-direction: column;
     width: 450px;
 }
-.field-box input{
+.email-form input , .field-box input{
     padding: 7px;
     
 }
@@ -151,7 +152,7 @@
     resize: vertical;
 }
 
-.comment-form button {
+.dltbtn ,.comment-form button , .email-form button{
     margin-top: 10px;
     padding: 5px 10px;
     background-color: var(--secondary-color);
@@ -159,6 +160,9 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+.actions button {
+    color: var(--primary-color);
 }
 
 /* ... Other CSS rules ... */
@@ -169,7 +173,9 @@
     border-radius: 3px;
     margin-bottom: 10px;
 }
-
+.author {
+    color: var(--primary-color);
+}
 /* Style for warning messages */
 .warning-message {
     background-color: #FFC107;
@@ -193,11 +199,31 @@
     .container {
         width: 80%;
     }
-}
+    .detail-blog{
+        width: 100%;
+        margin: auto;
 
-/* Media query for larger screens */
-@media (min-width: 1200px) {
-    .container {
-        width: 70%;
     }
 }
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .detail-blog{
+        width: 100%;
+        margin: auto;
+
+    }
+}
+@media (min-width: 368px) {
+    .container {
+        width: 80%;
+    }
+    .detail-blog{
+        width: 100%;
+        margin: auto;
+
+    }
+    
+}
+

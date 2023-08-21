@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block title %}
+SignUp
+{% endblock %}
 {% block content %}
     <div class="container">
         <div class="outer-box">
@@ -29,6 +32,7 @@
 
          
                 <button type="submit" class="submit-btn">Submit</button>
+                <p>I have already account <a href="{% url 'login' %}">Login</a></p>
               
             </form>
         </div>

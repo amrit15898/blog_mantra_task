@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% block title %}Home{% endblock %}
 {% block content %}
 
     <div class="container">
@@ -8,11 +8,15 @@
             <div class="blog-post flex">
                 <h1>{{blog.title}}</h1>
                 <div class="other-detail flex">
-                    <p>Published   {{blog.created_at}} by <b>{{blog.author}}</b></p>
+                    <p>Published   {{blog.created_at|date:"F d, Y"}}  by <b class="author">{{blog.author}}</b></p>
                 
                 </div>
-                {{ blog.content|truncatechars_html:500|safe }}  
-                <a href="{% url 'detailblog' blog.id %}">Read more</a>
+                <div>
+                   <p>
+                    {{ blog.content|truncatechars_html:1000|safe }}  
+                    <a href="{% url 'detailblog' blog.id %}" style="text-decoration: none;">Read more</a>
+                   </p>
+                </div>
             </div>
             
          </div>  

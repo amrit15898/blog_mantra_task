@@ -14,7 +14,7 @@ def sign_up(requset):
     if requset.method == "POST":
         try:
             first_name = requset.POST.get("fname")
-            last_name = requset.POST.get("last_name")
+            last_name = requset.POST.get("lname")
             username = requset.POST.get("username")
             email = requset.POST.get("email")
             password = requset.POST.get("password")

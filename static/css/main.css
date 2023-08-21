@@ -205,25 +205,5 @@
 
     }
 }
-@media (min-width: 768px) {
-    .container {
-        width: 80%;
-    }
-    .detail-blog{
-        width: 100%;
-        margin: auto;
 
-    }
-}
-@media (min-width: 368px) {
-    .container {
-        width: 80%;
-    }
-    .detail-blog{
-        width: 100%;
-        margin: auto;
-
-    }
-    
-}
 
